@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title> MOVIE </title>
+</head>
+
+<body>
+    <header>
+        <div class="container" >
+            <h1><a href="/"> v_MOVIE_v </a></h1>
+            <nav class="clearfix">
+                <ul class="menu">
+                    <li><a href="#"> Movie List </a>
+                        <ul class="submenu">
+                            <li><a href="/movie_list"> 영화 목록 </a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="#">Movie</a>
+                        <ul class="submenu">
+                            <li><a href="https://movie.naver.com/">네이버 영화</a></li>
+                            <li><a href="https://movie.daum.net/main">다음 영화</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Theater</a>
+                        <ul class="submenu">
+                            <li><a href="https://www.cgv.co.kr/">CGV</a></li>
+                            <li><a href="https://www.lottecinema.co.kr/NLCHS">LotteCinema</a></li>
+                            <li><a href="https://www.megabox.co.kr/">MegaBox</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"> Youtube </a>
+                        <ul class="submenu">
+                            <li><a href="https://www.youtube.com/channel/UCmjUMtUw6wXLrsULdxuXWdg/featured">CGV</a></li>
+                            <li><a href="https://www.youtube.com/c/LOTTECINEMA%EB%A1%AF%EB%8D%B0%EC%8B%9C%EB%84%A4%EB%A7%88">LotteCinema</a></li>
+                            <li><a href="https://www.youtube.com/user/onMEGABOX">MegaBox</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Instagram</a>
+                        <ul class="submenu"> 
+                            <li><a href="https://www.instagram.com/cgv_korea">CGV</a></li>
+                            <li><a href="https://www.instagram.com/lottecinema_official">LotteCinema</a></li>
+                            <li><a href="https://www.instagram.com/megaboxon">MegaBox</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <img id="image" src="{{url_for('static', filename='movie.jpg')}}">
+            <h2> MOVIE RECOMMEND 🎬 </h2>
+            <div class="form">
+                <form method="POST" action="{{url_for('home')}}">
+                    <label for="screen"> Movie Title : </label> &nbsp;
+                    <input id="name" type="text" name='name' placeholder="영화 제목">
+                    <br>
+                    <button id ="button" type="submit"> 장르 추천 </button>
+                    <p class="p"><a href="/movie_list"> 영화 목록 확인 </a></p>
+                </form> 
+            </div>
+            <p class="p"> 장르 추천 : 입력한 영화와 유사한 장르의 영화 추천 </p>
+            <p class="p"> 영화 목록 확인 후 목록에 있는 영화를 입력해 주세요 </p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p> Write by Codestates AIB 5기 김예린 </p>
+            <p> E-mail : dpfls1107@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
