@@ -1,6 +1,5 @@
-# movie_rec
 
-## 콘텐츠 기반 추천 시스템 
+## 콘텐츠 기반 추천 스템 
 
 
 - 추천시스템 : https://dsbook.tistory.com/334
