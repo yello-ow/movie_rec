@@ -25,10 +25,7 @@
   
   ## 프로젝트 결과 
   - APP : [🔗Web APP](https://recomovie.herokuapp.com/)
-  <br>
-  <div align="center">
-  <img width="850" src="https://user-images.githubusercontent.com/86868063/152792862-f5e3ae7b-4b94-4230-b39e-ab5a4d1dd8f6.png">
-  </div>
+  <img src="https://user-images.githubusercontent.com/86868063/152792862-f5e3ae7b-4b94-4230-b39e-ab5a4d1dd8f6.png">
 
   
 
